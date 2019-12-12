@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <l-button-group>
+      <l-button :loading="true" icon-position="right">测试</l-button>
+      <l-button>哈哈</l-button>
+    </l-button-group>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LButton from './Button'
+import LButtonGroup from './ButtonGroup'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    LButton,
+    LButtonGroup
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
